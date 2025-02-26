@@ -1,0 +1,28 @@
+@use "@/styles/_colors.scss" as colors;
+@use "@/styles/_mixins.scss" as mixins;
+
+.control {
+  position: absolute;
+  display: flex;
+  top: 3%;
+  gap: 30px;
+
+  &__item {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: colors.$bright-yellow;
+    // font-size: 20px;
+    &:hover {
+      font-weight: bold;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  input[type="radio"] {
+    margin: 5px;
+  }
+
+  &__button {
+    @include mixins.button;
+  }
+}

@@ -1,0 +1,16 @@
+@use "@/styles/_colors.scss" as colors;
+@use "@/styles/_mixins.scss" as mixins;
+
+.textEditor {
+  background-color: colors.$bright-yellow;
+  width: 70%;
+  height: 100%;
+  border: 1px solid colors.$border;
+  border-radius: 3px;
+  &__area {
+    height: 100%;
+  }
+  &__button {
+    @include mixins.button;
+  }
+}

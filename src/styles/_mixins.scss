@@ -1,0 +1,14 @@
+@use "@/styles/_colors.scss" as colors;
+
+@mixin button {
+  margin: 1px;
+  padding: 5px 10px;
+  background-color: colors.$button-color;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  &:hover {
+    background-color: colors.$button-color-hover;
+  }
+}
